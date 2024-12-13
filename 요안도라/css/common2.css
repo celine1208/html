@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* 웹폰트 본문:제주고딕, 타이틀: 플라이트산스Title */
+@import url('./webfont.css');
+
+/* 초기화 */
+body, h1, h2, h3, p, ul, figure,figcaption { margin:0; padding: 0; }
+ul { list-style: none; }
+a { text-decoration: none; }
+address {font-style: normal;}
+
+.hidden { overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Jeju Gothic';
+    font-style: normal;
+    font-weight: 400;
+    background: #b8dbf8;
+    }
+    
+#header { height: 700px;
+        background:url(../images/bg.jpg) no-repeat center center / cover;
+        position:relative;
+        display:flex; flex-wrap:wrap;
+        justify-content: center;
+        align-content: center; }
+#header hgroup { color: #fff;}
+#header hgroup h1 { margin-bottom: 20px;
+                    font: 100px 'FlightSans-Title'; width: 100%;
+                    text-shadow: #000000aa 0 5px 5px;}
+#header hgroup p { font-size: 25px; width: 100%; text-align:end;
+                    text-shadow: #000 0 5px 5px;}
+#gnb { width: 1000px; position:absolute; top: 670px; left:50%; 
+    transform:translateX(-50%); }
+#gnb ul { height: 60px; display: flex; flex-wrap: wrap;}
+#gnb ul li {width: 25%; height: 60px;}
+#gnb ul li a {display: block; line-height: 60px;
+            text-align: center; font-size:15px;
+            color: #fff; background: #036; transition:0.4s }
+#gnb ul li a:hover {background:#fff; color:#036;}
+
+/* CONTENT */
+#content { margin: 0 auto; width: 1000px; height: 515px; background: #fff; padding: 60px 11px 30px;}
+#content h2 { padding: 20px 38px;}
+#content p { padding: 0 38px 10px; }
+#content article figure {margin-left: 42px;}
+#content article figcaption { padding: 7px 0 13px; }
+
+/* FOOTER */
+#footer { padding: 23px 0 10px;
+        background: #003300; color: white; text-align: center;}
+#footer p {margin-bottom: 17px;}
